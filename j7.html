@@ -1,0 +1,33 @@
+<head>
+
+<script>
+
+function checkForm(form) {
+
+if(form.name.value == "") {
+
+alert("name is empty ");
+
+return false;
+
+}
+
+return true;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form name="form1" onsubmit="return checkForm(this)">
+
+<input type="text" name="name"/><br>
+
+<input type="submit"/>
+
+</form>
+
+</body>
