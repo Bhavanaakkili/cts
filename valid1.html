@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+          
+            function myFunction()
+            {
+                var name = document.myform.name.value;
+                var password1 = document.myform.password1.value;
+                var password2 = document.myform.password2.value;
+
+                if( name=="")
+                {
+                     alert("please enter name first");
+                     return false;
+                }
+
+                else if(password1.length<6)
+                {
+                    alert("password length must be 6 or more than it");
+                    return false;
+                }
+
+                else if(password1==password2)
+                {
+                    return true;
+                }
+
+                else 
+                {
+                    alert("password not match");
+                    return false;
+                }
+
+                
+            }
+        </script>
+    </head>
+
+    <body>
+            <form name="myform"  onsubmit="return myFunction()">
+                <input type="text" name="name"/><br/>
+                <input type="password1" name="password1"><br/>
+                <input type="password2" name="password2"><br/>
+                <input type="submit" value="register">
+            </form>
+    </body>
+</html>

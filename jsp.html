@@ -1,0 +1,60 @@
+<!--<html>  
+<body>  
+<script type="text/javascript">  
+alert("hello guys");
+document.write("JavaScript is a simple ");  
+
+</script>  
+</body>  
+</html>  
+<html>  
+<head>  
+<script type="text/javascript">  
+function msg(){  
+ alert("Hello JavatpointAAAA");  
+}  
+</script>  
+</head>  
+<body>  
+<p>Welcome to JavaScript</p>  
+<form>  
+<input type="button" value="click" onclick="msg()"/>  
+</form>  
+</body>  
+</html>  
+
+<html>
+<body>
+<script>  
+var x = 10;  
+var y = 20;  
+var z=x+y;  
+document.write(z);  
+</script>  
+</body>
+</html> -->
+
+<head>
+    <script>
+        function checkForm(form)
+        {
+            if(form.ravi.value=="")
+            {
+                alert("name is empty");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+</head>
+
+<body>
+    <form name="form1" onsubmit="return checkForm(this)">
+        <input type="text" name="ravi"/><br/>
+        <input type="submit"/>
+    </form>
+    document.write("hello");
+</body>
+
+
